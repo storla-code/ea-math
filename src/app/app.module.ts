@@ -12,6 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {TestModule} from './test/test.module';
+import {MatTreeModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {TestModule} from './test/test.module';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    TestModule
+    TestModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
