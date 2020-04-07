@@ -1,18 +1,23 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
-    <mat-nav-list style="width: 300px">
+    <mat-nav-list style="width: 350px">
+      <mat-list-item>
+        <mat-icon>home</mat-icon>
+        &nbsp; Home
+      </mat-list-item>
       <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
-        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
-          <mat-list-item>test</mat-list-item>
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding matTreeNodePaddingIndent="20px">
+          <mat-list-item (click)="sidenav.close()">
+            {{node.name}}
+          </mat-list-item>
         </mat-tree-node>
-        <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+        <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="20px">
           <mat-list-item matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
             <mat-icon >
               {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
             </mat-icon>
             {{node.name}}
           </mat-list-item>
-
         </mat-tree-node>
       </mat-tree>
     </mat-nav-list>
@@ -25,7 +30,7 @@
                  (click)="sidenav.open()">
           <mat-icon>menu</mat-icon>
         </button>
-        <span>ea-math</span>
+        <h1 class="title-center">EA MATH</h1>
       </mat-toolbar>
     </div>
   </mat-sidenav-content>
