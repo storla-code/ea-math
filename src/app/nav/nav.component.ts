@@ -2,9 +2,9 @@ import {Component} from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import {Observable} from 'rxjs';
 import {map, shareReplay} from 'rxjs/operators';
-import {TestComponent} from '../test/test.component';
+
 import {FlatTreeControl, NestedTreeControl} from '@angular/cdk/tree';
-import {MatTreeFlatDataSource, MatTreeFlattener, MatTreeNestedDataSource} from '@angular/material';
+import { MatTreeFlatDataSource, MatTreeFlattener, MatTreeNestedDataSource } from '@angular/material/tree';
 
 interface FoodNode {
   name: string;
@@ -68,6 +68,9 @@ interface ExampleFlatNode {
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
+
+  sideNavOpen: boolean;
+
   private _transformer = (node: FoodNode, level: number) => {
     return {
       expandable: !!node.children && node.children.length > 0,
@@ -86,7 +89,13 @@ export class NavComponent {
 
   constructor() {
     this.dataSource.data = TREE_DATA;
+    this.sideNavOpen = true;
   }
 
   hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
+
+
+  changeNav() {
+    this.sideNavOpen = !this.sideNavOpen
+  }
 }

@@ -1,19 +1,20 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav>
-    <mat-nav-list style="width: 350px">
-      <mat-list-item>
-        <mat-icon>home</mat-icon>
-        &nbsp; Home
-      </mat-list-item>
+<mat-icon *ngIf="!sideNavOpen" (click)="changeNav()">menu</mat-icon>
+<div  style="background: rgba(128, 128, 128,.5); height: 100vh">
+  <mat-sidenav [opened]="sideNavOpen">
+    <mat-nav-list style="width: 300px;">
+      <button mat-raised-button><mat-icon >home</mat-icon></button>
+      <mat-icon (click)="changeNav()">menu</mat-icon>
       <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
-        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding matTreeNodePaddingIndent="20px">
-          <mat-list-item (click)="sidenav.close()">
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding matTreeNodePaddingIndent="20px"
+                       style=" background: rgba(128, 128, 128,.5);">
+          <mat-list-item>
             {{node.name}}
           </mat-list-item>
         </mat-tree-node>
-        <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="20px">
+        <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="20px"
+                       style=" background: rgba(128, 128, 128,.5);">
           <mat-list-item matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
-            <mat-icon >
+            <mat-icon>
               {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
             </mat-icon>
             {{node.name}}
@@ -22,16 +23,4 @@
       </mat-tree>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <div style="height: 100vh;">
-      <mat-toolbar color="primary">
-        <button  mat-icon-button
-                 aria-label="Menu"
-                 (click)="sidenav.open()">
-          <mat-icon>menu</mat-icon>
-        </button>
-        <h1 class="title-center">EA MATH</h1>
-      </mat-toolbar>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+</div>
