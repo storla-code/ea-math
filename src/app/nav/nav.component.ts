@@ -23,25 +23,8 @@ const TREE_DATA: FoodNode[] = [
         name: 'Ch. 1 Expressions',
         children: [
           {
-            name: '1.1 Intro to the Order of Operations',
-            children: [
-              {name: 'Beginning with the basic four'},
-              {name: 'Simplifying  explicit grouping'},
-              {name: 'Simplifying mplicit grouping'},
-              {name: ' vocabulary for the basic four'},
-              {name: 'The Distributive Property - Part 1'},
-              {name: 'The Distributive Property - Part 2'}
-            ]
-          },
-          {name: '1.2 Multiplying/Dividing Integers'},
-          {name: '1.3 Adding Integers'},
-          {name: '1.4 Subtracting Integers'},
-          {name: '1.5 Reducing Fractions'},
-          {name: '1.6 Multiplying/Dividing Fractions'},
-          {name: '1.7 Adding/Subtracting Fractions'},
-          {name: '1.8 Applying the Order of Operations'},
-          {name: '1.9  Linear Equations pt. 1'},
-          {name: '1.10 Linear Equations pt. 2'}
+            name: '1.1 The Order of Operations',
+          }
         ]
       },
       {name: 'Ch. 2 Equations/Inequalities'},
