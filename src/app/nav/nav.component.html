@@ -1,32 +1,40 @@
+<mat-sidenav #sidenav id="mySideNav">
+  <mat-nav-list style="width: 350px">
+    <button mat-raised-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
 
-
-  <mat-sidenav #sidenav id="mySideNav">
-    <mat-nav-list style="width: 350px" >
-      <button mat-raised-button> <mat-icon (click)="sidenav.toggle()">menu</mat-icon> </button>
-      <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
-        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding matTreeNodePaddingIndent="50px">
+      <mat-tree-node *matTreeNodeDef="let node"
+                     matTreeNodePadding
+                     matTreeNodePaddingIndent="50px"
+      >
+        <a [routerLink]="['test']">
           <mat-list-item>
             {{node.name}}
           </mat-list-item>
-        </mat-tree-node>
+        </a>
+      </mat-tree-node>
 
-        <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="50px">
-          <mat-list-item matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
-              <mat-icon>
-              {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
-            </mat-icon>
-            {{node.name}}
-          </mat-list-item>
-        </mat-tree-node>
-      </mat-tree>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-toolbar color="primary">
-    <button  mat-icon-button
-             aria-label="Menu"
-             (click)="sidenav.open()">
-      <mat-icon>menu</mat-icon>
-      <span style="font-size: 200%; margin-left: 40%">Engaging Algebra</span>
-    </button>
+
+      <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodePaddingIndent="50px">
+        <mat-list-item matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name">
+          <mat-icon>
+            {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+          </mat-icon>
+          {{node.name}}
+        </mat-list-item>
+      </mat-tree-node>
+
+    </mat-tree>
+  </mat-nav-list>
+</mat-sidenav>
+<mat-toolbar color="primary">
+  <button mat-icon-button
+          aria-label="Menu"
+          (click)="sidenav.open()">
+    <mat-icon>menu</mat-icon>
+    <span style="font-size: 200%; margin-left: 40%">Engaging Algebra</span>
+  </button>
 </mat-toolbar>
-
+<router-outlet></router-outlet>

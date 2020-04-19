@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
 interface Video {
@@ -12,11 +12,10 @@ interface Card {
 }
 
 @Component({
-  selector: 'app-videos',
-  templateUrl: './videos.component.html',
-  styleUrls: ['./videos.component.scss']
+  selector: 'fall-app',
+  template: `<app-videos></app-videos>`
 })
-export class VideosComponent implements OnInit {
+export class FallbackComponent {
   myListObject = [] as Array<Video>;
   temp = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/hp5L0VwuFck');
   video: Video = {title: 'test', video: this.temp};
@@ -28,4 +27,3 @@ export class VideosComponent implements OnInit {
     this.myListObject.push(this.video);
   }
 }
-

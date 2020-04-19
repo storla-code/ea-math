@@ -19,6 +19,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {VideosModule} from './videos/videos.module';
+import { FallbackComponent } from './fallback/fallback.component';
 
 
 
@@ -28,7 +29,8 @@ import {VideosModule} from './videos/videos.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    FallbackComponent
   ],
   imports: [
     BrowserModule,
