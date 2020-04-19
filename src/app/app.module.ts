@@ -18,6 +18,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {VideosModule} from './videos/videos.module';
 
 
 
@@ -42,7 +43,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTreeModule,
     MatCardModule,
     MatExpansionModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    VideosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
