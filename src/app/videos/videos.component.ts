@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 
 export interface Video {
   title: string;
@@ -15,5 +15,6 @@ export class VideosComponent implements OnInit {
   myListObject = [] as Array<Video>;
   title: string;
   ngOnInit(): void {}
+  constructor(public sanitizer: DomSanitizer){}
 }
 
