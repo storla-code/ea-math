@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-title style="font-size: 150%">{{title}}</mat-card-title>
+  <div *ngFor="let obj of myListObject">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{obj.title}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div style="height: 60vh">
+        <mat-video src="{{obj.video}}" preload = true download = true></mat-video>
+      </div>
+    </mat-expansion-panel>
+  </div>
+</mat-card>

@@ -18,10 +18,9 @@ import {MatTreeModule} from '@angular/material/tree';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {VideosModule} from './videos/videos.module';
-import { FallbackComponent } from './fallback/fallback.component';
-
-
+import {PagesModule} from './pages/pages.module';
+import {MatVideoModule} from 'mat-video';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -30,7 +29,7 @@ import { FallbackComponent } from './fallback/fallback.component';
   declarations: [
     AppComponent,
     NavComponent,
-    FallbackComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +45,9 @@ import { FallbackComponent } from './fallback/fallback.component';
     MatCardModule,
     MatExpansionModule,
     MatFormFieldModule,
-    VideosModule
+    PagesModule,
+    BrowserAnimationsModule,
+    MatVideoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

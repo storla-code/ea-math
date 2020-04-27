@@ -1,15 +1,17 @@
 <mat-sidenav #sidenav id="mySideNav">
-  <mat-nav-list style="width: 350px">
+  <mat-nav-list #matNavList style="width: 350px">
     <button mat-raised-button>
-      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      <mat-icon (click)="sidenav.toggle();matTree.treeControl.collapseAll()">arrow_back</mat-icon>
     </button>
-    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+    <button mat-raised-button>
+      <mat-icon (click)="redirectHome();sidenav.close()">home</mat-icon>
+    </button>
+    <mat-tree #matTree [dataSource]="dataSource" [treeControl]="treeControl">
 
       <mat-tree-node *matTreeNodeDef="let node"
                      matTreeNodePadding
-                     matTreeNodePaddingIndent="50px"
-      >
-        <a [routerLink]="node.name">
+                     matTreeNodePaddingIndent="50px">
+        <a [routerLink]="node.urlName" (click)="sidenav.close()">
           <mat-list-item>
             {{node.name}}
           </mat-list-item>
@@ -34,7 +36,8 @@
           aria-label="Menu"
           (click)="sidenav.open()">
     <mat-icon>menu</mat-icon>
-    <span style="font-size: 200%; margin-left: 40%">Engaging Algebra</span>
+    <span style="font-size: 200%; margin-left: 40%">Engaging Algebra</span> &nbsp;
+    <mat-icon>school</mat-icon>
   </button>
 </mat-toolbar>
 <router-outlet></router-outlet>
