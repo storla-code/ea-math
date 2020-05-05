@@ -21,6 +21,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {PagesModule} from './pages/pages.module';
 import {MatVideoModule} from 'mat-video';
 import { HomeComponent } from './home/home.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 
 
 
@@ -31,25 +33,29 @@ import { HomeComponent } from './home/home.component';
     NavComponent,
     HomeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatTreeModule,
-    MatCardModule,
-    MatExpansionModule,
-    MatFormFieldModule,
-    PagesModule,
-    BrowserAnimationsModule,
-    MatVideoModule
-  ],
-  providers: [],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        LayoutModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatIconModule,
+        MatListModule,
+        MatTreeModule,
+        MatCardModule,
+        MatExpansionModule,
+        MatFormFieldModule,
+        PagesModule,
+        BrowserAnimationsModule,
+        MatVideoModule,
+      MatDatepickerModule,
+      MatNativeDateModule,
+    ],
+  providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

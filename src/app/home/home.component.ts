@@ -6,8 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  bMobile =
+    navigator.userAgent.indexOf( "Mobile" ) !== -1 ||
+    navigator.userAgent.indexOf( "iPhone" ) !== -1 ||
+    navigator.userAgent.indexOf( "Android" ) !== -1 ||
+    navigator.userAgent.indexOf( "Windows Phone" ) !== -1 ;
+  selectedDate: any;
   constructor() { }
   ngOnInit(): void {
+    console.log(this.bMobile)
   }
+
+  onSelect(event){
+    console.log(event);
+    this.selectedDate= event;
+  }
+
 
 }

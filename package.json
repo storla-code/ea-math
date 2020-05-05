@@ -21,6 +21,8 @@
     "@angular/platform-browser": "~9.1.1",
     "@angular/platform-browser-dynamic": "~9.1.1",
     "@angular/router": "~9.1.1",
+    "angular-material-event-calendar": "^0.1.4",
+    "ap-angular2-fullcalendar": "^1.6.4",
     "mat-video": "^2.8.1",
     "rxjs": "~6.5.5",
     "tslib": "^1.10.0",
