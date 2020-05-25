@@ -20,27 +20,27 @@ export class TheOrderofOperations implements OnInit {
   data = [
     {
       title: 'Beginning with the basic four',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'Simplifying explicit grouping',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title:  'Simplifying implicit grouping',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'Vocabulary practice - basic four',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'The Distributive PropertyPart 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'The Distributive Property Part 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
   ];
 
@@ -58,11 +58,11 @@ export class MultiplyingandDividingIntegers implements OnInit {
   data = [
     {
       title: 'MultiplyingandDividingIntegers - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'MultiplyingandDividingIntegers - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -79,11 +79,11 @@ export class AddingIntegers implements OnInit {
   data = [
     {
       title: 'AddingIntegers - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AddingIntegers - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -91,7 +91,8 @@ export class AddingIntegers implements OnInit {
 
 @Component({
   templateUrl: './pages.component.html',
-  styleUrls: ['./pages.component.scss']
+  styleUrls: ['./pages.component.scss'],
+  selector: 'subtracting-integers'
 })
 export class SubtractingIntegers implements OnInit {
   ngOnInit(): void {}
@@ -100,11 +101,11 @@ export class SubtractingIntegers implements OnInit {
   data = [
     {
       title: 'SubtractingIntegers - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'SubtractingIntegers - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -121,11 +122,11 @@ export class ReducingFractions implements OnInit {
   data = [
     {
       title: 'ReducingFractions - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ReducingFractions - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -142,11 +143,11 @@ export class MultiplyingandDividingFractions implements OnInit {
   data = [
     {
       title: 'MultiplyingandDividingFractions - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'MultiplyingandDividingFractions - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -163,11 +164,11 @@ export class AddingandSubtractingFractions implements OnInit {
   data = [
     {
       title: 'AddingandSubtractingFractions - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AddingandSubtractingFractions - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -184,11 +185,11 @@ export class ApplyingtheOrderofOperations implements OnInit {
   data = [
     {
       title: 'ApplyingtheOrderofOperations - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ApplyingtheOrderofOperations - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -205,11 +206,11 @@ export class PreparingforLinearEquationsPart1 implements OnInit {
   data = [
     {
       title: 'PreparingforLinearEquationsPart1 - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'PreparingforLinearEquationsPart1 - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -226,11 +227,11 @@ export class PreparingforLinearEquationsPart2 implements OnInit {
   data = [
     {
       title: 'PreparingforLinearEquationsPart2 - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'PreparingforLinearEquationsPart2 - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -247,11 +248,11 @@ export class AnIntroductiontoLinearEquations implements OnInit {
   data = [
     {
       title: 'AnIntroductiontoLinearEquations - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AnIntroductiontoLinearEquations - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -268,11 +269,11 @@ export class ContinuingwithLinearEquations implements OnInit {
   data = [
     {
       title: 'ContinuingwithLinearEquations - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ContinuingwithLinearEquations - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -289,11 +290,11 @@ export class ConcludingLinearEquations implements OnInit {
   data = [
     {
       title: 'ConcludingLinearEquations - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ConcludingLinearEquations - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -310,11 +311,11 @@ export class AnIntroductiontoWordProblems implements OnInit {
   data = [
     {
       title: 'AnIntroductiontoWordProblems - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AnIntroductiontoWordProblems - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -331,11 +332,11 @@ export class ContinuingwithWordProblems implements OnInit {
   data = [
     {
       title: 'ContinuingwithWordProblems - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ContinuingwithWordProblems - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -352,11 +353,11 @@ export class TheSolutionSetforaLinearInequality implements OnInit {
   data = [
     {
       title: 'TheSolutionSetforaLinearInequality - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'TheSolutionSetforaLinearInequality - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -373,11 +374,11 @@ export class SolvingLinearInequalities implements OnInit {
   data = [
     {
       title: 'SolvingLinearInequalities - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'SolvingLinearInequalities - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -394,11 +395,11 @@ export class AnIntroductiontoFunctions implements OnInit {
   data = [
     {
       title: 'AnIntroductiontoFunctions - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AnIntroductiontoFunctions - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -415,11 +416,11 @@ export class Intercepts implements OnInit {
   data = [
     {
       title: 'Intercepts - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'Intercepts - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -436,11 +437,11 @@ export class TheSlopeofaLinearFunction implements OnInit {
   data = [
     {
       title: 'TheSlopeofaLinearFunction - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'TheSlopeofaLinearFunction - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -457,11 +458,11 @@ export class LinearFunctionsinSlopeInterceptForm implements OnInit {
   data = [
     {
       title: 'LinearFunctionsinSlope - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'LinearFunctionsinSlope - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -478,11 +479,11 @@ export class RewritingLinearFunctionsIntoSlopeInterceptForm implements OnInit {
   data = [
     {
       title: 'RewritingLinearFunctionsIntoSlope - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'RewritingLinearFunctionsIntoSlope - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -499,11 +500,11 @@ export class OtherLinearFunctionTopics implements OnInit {
   data = [
     {
       title: 'OtherLinearFunctionTopics - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'OtherLinearFunctionTopics - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -520,11 +521,11 @@ export class AnIntroductiontoExponentiation implements OnInit {
   data = [
     {
       title: 'AnIntroductiontoExponentiation - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AnIntroductiontoExponentiation - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -541,11 +542,11 @@ export class ApplyingPowers implements OnInit {
   data = [
     {
       title: 'ApplyingPowers - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ApplyingPowers - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -562,11 +563,11 @@ export class AnIntroductiontoExponentRules implements OnInit {
   data = [
     {
       title: 'AnIntroductiontoExponentRules - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AnIntroductiontoExponentRules - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -583,11 +584,11 @@ export class ContinuingwithExponentRules implements OnInit {
   data = [
     {
       title: 'ContinuingwithExponentRules - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ContinuingwithExponentRules - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -604,11 +605,11 @@ export class ScientificNotation implements OnInit {
   data = [
     {
       title: 'ScientificNotation - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ScientificNotation - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -625,11 +626,11 @@ export class AnintroductiontoPolynomails implements OnInit {
   data = [
     {
       title: 'AnintroductiontoPolynomails - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AnintroductiontoPolynomails - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -646,11 +647,11 @@ export class BeginningPolynomialMultiplication implements OnInit {
   data = [
     {
       title: 'BeginningPolynomialMultiplication - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'BeginningPolynomialMultiplication - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -667,11 +668,11 @@ export class OperationswithMultivariatePolynomials implements OnInit {
   data = [
     {
       title: 'OperationswithMultivariatePolynomials - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'OperationswithMultivariatePolynomials - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -688,11 +689,11 @@ export class ContinuingwithPolynomialMultiplication implements OnInit {
   data = [
     {
       title: 'ContinuingwithPolynomialMultiplication - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ContinuingwithPolynomialMultiplication - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -709,11 +710,11 @@ export class BeginningPolynomialFactoring implements OnInit {
   data = [
     {
       title: 'BeginningPolynomialFactoring - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'BeginningPolynomialFactoring - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -730,11 +731,11 @@ export class ContinuingPolynomialFactoring implements OnInit {
   data = [
     {
       title: 'ContinuingPolynomialFactoring - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ContinuingPolynomialFactoring - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -751,11 +752,11 @@ export class FactoringMultivariatePolynomials implements OnInit {
   data = [
     {
       title: 'FactoringMultivariatePolynomials - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'FactoringMultivariatePolynomials - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -772,11 +773,11 @@ export class PolynomialPrimeFactorization implements OnInit {
   data = [
     {
       title: 'PolynomialPrimeFactorization - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'PolynomialPrimeFactorization - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -793,11 +794,11 @@ export class TheZeroProductMethod implements OnInit {
   data = [
     {
       title: 'TheZero - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'TheZero - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -814,11 +815,11 @@ export class AnIntroductiontoRoots implements OnInit {
   data = [
     {
       title: 'AnIntroductiontoRoots - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AnIntroductiontoRoots - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -835,11 +836,11 @@ export class AProductPropertyforSquareRoots implements OnInit {
   data = [
     {
       title: 'AProductPropertyforSquareRoots - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AProductPropertyforSquareRoots - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -856,11 +857,11 @@ export class AddingandSubtractingSquareRoots implements OnInit {
   data = [
     {
       title: 'AddingandSubtractingSquareRoots - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'AddingandSubtractingSquareRoots - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -877,11 +878,11 @@ export class QuotientsandSquareRoots implements OnInit {
   data = [
     {
       title: 'QuotientsandSquareRoots - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'QuotientsandSquareRoots - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -898,11 +899,11 @@ export class PreparingfortheQuadraticFormula implements OnInit {
   data = [
     {
       title: 'PreparingfortheQuadraticFormula - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'PreparingfortheQuadraticFormula - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -919,11 +920,11 @@ export class ApplyingRoots implements OnInit {
   data = [
     {
       title: 'ApplyingRoots - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ApplyingRoots - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -940,11 +941,11 @@ export class TheSquareRootMethod implements OnInit {
   data = [
     {
       title: 'TheSquareRootMethod - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'TheSquareRootMethod - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -961,11 +962,11 @@ export class TheQuadraticFormula implements OnInit {
   data = [
     {
       title: 'TheQuadraticFormula - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'TheQuadraticFormula - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -982,11 +983,11 @@ export class ApplyingQuadraticFunctions implements OnInit {
   data = [
     {
       title: 'ApplyingQuadraticFunctions - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'ApplyingQuadraticFunctions - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));
@@ -1003,11 +1004,11 @@ export class QuadraticFunctionsinStandardForm implements OnInit {
   data = [
     {
       title: 'QuadraticFunctionsinStandardForm - 1',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     },
     {
       title: 'QuadraticFunctionsinStandardForm - 2',
-      video: '/ea-math/assets/video.mp4'
+      video: '/assets/video.mp4'
     }
   ];
   myListObject: Video[] = JSON.parse(JSON.stringify(this.data));

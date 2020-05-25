@@ -103,6 +103,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatCardModule,
     BrowserAnimationsModule,
     MatVideoModule
+  ],
+  exports: [
+    SubtractingIntegers
   ]
 })
 export class PagesModule { }

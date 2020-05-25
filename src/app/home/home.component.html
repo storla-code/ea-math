@@ -1,11 +1,13 @@
+<div class="flex-container">
 
-<mat-card  style="width: 40vw; margin: 1%; display: inline-block;">
-  <mat-card-content>
-    <mat-calendar [selected]="selectedDate" (selectedChange)="onSelect($event)"></mat-calendar>
-  </mat-card-content>
-</mat-card>
-<mat-card  style="width: 40vw; margin: 1%; display: inline-block;">
-  <mat-card-content>
-    <mat-calendar [selected]="selectedDate" (selectedChange)="onSelect($event)"></mat-calendar>
-  </mat-card-content>
-</mat-card>
+  <mat-card style="width: 40vw; margin: 1.5%">
+    <mat-card-content>
+      <mat-calendar [selected]="selectedDate" (selectedChange)="onSelect($event)"></mat-calendar>
+    </mat-card-content>
+  </mat-card>
+  <mat-card style="width: 40vw;height: 60vh; margin: 1.5%">
+    <mat-card-content>
+      <subtracting-integers></subtracting-integers>
+    </mat-card-content>
+  </mat-card>
+</div>
